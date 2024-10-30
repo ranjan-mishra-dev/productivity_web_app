@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div style="display: flex; align-items: center;">
+      <div class="logo"><img id="logoimg" src="./images/fast.png" alt=""></div>
+      <h1 style="margin-left: 10px; font-size: 50px;">HabitPulse</h1>
+
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li>
+        <a href="./to_do_section/todo.html" style="display: flex;">
+          <span style="padding-top: 5px"> To-Do</span>
+          <img src="./images/image-gallery.png" style="width: 30px; height: 30px; align-items: center; margin-left: 10px;">
+        </a>
+      </li>
+      <li>
+        <a href="./habit_section/habit.html" style="display: flex;">
+          <span style="padding-top: 5px"> Habit</span>
+          <img src="./images/tracker_11529546.png" style="width: 30px; height: 30px; align-items: center; margin-left: 10px;">
+        </a>
+      </li>
+      <li>
+        <a href="./pomodoro_section/pomodoro.html" style="display: flex;">
+          <span style="padding-top: 5px">Pomodoro</span>
+          <img src="./images/stopwatch.png" style="width: 30px; height: 30px; align-items: center; margin-left: 10px;">
+        </a>
+      </li>
+      <li>
+        <a href="./journal/journal.html" style="display: flex;">
+          <span style="padding-top: 5px"> Journal</span>
+          <img src="./images/copy-writing.png" style="width: 30px; height: 30px; align-items: center; margin-left: 10px;">
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 id="current-time"></h1>
+      <p id="current-date"></p>
+      <!-- Start Button with Image -->
+      <button id="getQuoteBtn" class="start-btn">
+        <img src="./images/rise.png" style="width: 100px; height: 100px;" alt="">
+      </button>
+    </div>
+  </section>
+
+  <!-- Quote Pop-up -->
+  <div id="quotePopup" class="popup hidden">
+    <span class="close-btn" id="closePopup">&times;</span>
+    <p id="quoteText" style="margin-bottom: 10px; font-size: 28px;">Fetching...</p>
+    <p id="authorText" style="color: brown;"></p>
+  </div>
+
+  <hr style="margin-top: 10px;">
+
+  <!-- feature  -->
+
+  <h2 style="margin: auto; text-align: center; margin-top: 20px; font-size: 50px;">Features</h2>
+  <section class="features">
+    <div class="feature">
+      <img src="./images/journal_writing.png" style="width: 50px; height: 60px; align-items: center; margin-left: 10px;">
+      <h2> Journal </h2>
+      <p>Keep a daily journal to reflect on your progress, goals, and thoughts. Journaling helps build clarity and track personal development.</p>
+      <button class="explore-btn">Explore</button>
+    </div>
+
+    <div class="feature">
+      <img src="./images/to-do-list.png" style="width: 70px; height: 70px; align-items: center; margin-left: 10px;">
+      <h2>To-Do List</h2>
+      <p>Organize your tasks with a simple to-do list. Prioritize your goals and never miss an important task again!</p>
+      <button class="explore-btn">Explore</button>
+    </div>
+
+    <div class="feature">
+      <img src="./images/pomodoro_timer.png" style="width: 60px; height: 60px; align-items: center; margin-left: 10px;">
+      <h2>Pomodoro Timer</h2>
+      <p>Boost your productivity using the Pomodoro technique. Work in focused intervals with short breaks in between to stay fresh and efficient.</p>
+      <button class="explore-btn">Explore</button>
+    </div>
+  </section>
+
+
+  <!-- quote author  -->
+
+  <section class="quote-section">
+    <div class="quote-box">
+      <p class="quote">“Productivity is being able to do things that you were never able to do before.”</p>
+      <div class="author-info">
+        <img src="./images/kafka.jpg" alt="Author Photo" class="author-photo">
+        <p class="author-name"> – Franz Kafka</p>
+      </div>
+    </div>
+  </section>
+
+<!-- footer  -->
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h2>About Us</h2>
+      <p>We are committed to enhancing productivity and building sustainable habits. This app is designed to help users manage their day with tasks, habits, journals, and more.</p>
+    </div>
+
+    <div class="footer-section contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:support@habitpulse.com">support@habitpulse.com</a></p>
+      <p>Phone: +91 1234 567 890</p>
+    </div>
+
+    <div class="footer-section address">
+      <h2>Address</h2>
+      <p>xyz, Goregaon Mumbai, India</p>
+    </div>
+
+    <div class="footer-section social">
+      <h2>Follow Us</h2>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+      <a href="https://www.twitter.com" target="_blank">Twitter</a> | 
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p><strong> &copy; This is CS50 Final Project 2024</strong></p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

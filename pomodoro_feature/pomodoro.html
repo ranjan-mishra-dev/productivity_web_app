@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="pomodoro.css">
+</head>
+<body>
+  <div class="container">
+    
+    <h1 style="display: flex; align-items: center; justify-content: center; gap: 10px;" >Pomodoro <img src="../images/pomodoro-technique.png" style="width: 100px; height: 100px;" alt=""></h1>
+
+    <button id="startStandard">Start Standard Pomodoro</button>
+    <button id="customPomodoro">Create My Own Pomo</button>
+
+    <div id="customSettings" style="display: none;">
+      <h3>Customize Your Pomodoro</h3>
+      <label>Number of Cycles: <input type="number" id="cycles" min="1"></label>
+      <label>Work Duration (min): <input type="number" id="workDuration" min="1"></label>
+      <label>Break Duration (min): <input type="number" id="breakDuration" min="1"></label>
+      <button id="startCustom">Start Custom Pomodoro</button>
+    </div>
+
+    <h2 id="timerDisplay">00:00</h2>
+
+    <p id="progressDisplay"></p>
+
+    <button id="stop" style="display: none;">Stop</button>
+    <button id="reset" style="display: none;">Reset</button>
+
+    <script src="pomodoro.js"></script>
+  </div>
+</body>
+</html>
