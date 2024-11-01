@@ -100,7 +100,7 @@
 .hero {
     height: 100vh;
     width: 100%;
-    background: url('./images/happy-1070327_1280.jpg') no-repeat center center/cover;
+    background: url('../images/homepage_banner.jpg') no-repeat center center/cover;
     position: relative;
   }
   
