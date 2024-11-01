@@ -32,7 +32,7 @@ HabitPulse is a web app that will help you to create TO-DO list, in tracking you
 ## ⚙️ Installation & Setup
 
 ```bash
-git clone https://github.com/your-username/eco-smart-waste-management.git
+git clone https://github.com/ranjan-mishra-dev/productivity_web_app.git
 
 ```
 
